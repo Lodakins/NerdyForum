@@ -1,11 +1,301 @@
-@font-face{
-	src:url('font/');
-	font-family: 'QuickSand';
-}
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Quicksand:400,700');
+@import url('https://fonts.googleapis.com/css?family=Gilda+Display');
+
 body,html{
 	padding:0;
 	margin:0;
+	font-size: 16px;
 }
+*{
+	box-sizing: border-box;
+}
+
+/*=================================
+font-family: 'PT Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Gilda Display', serif;
+=====================================*/
+/* ==================================
+ 		Header Section 
+ ====================================*/
 .navbar{
-	background-color: #980;
+	font-family: 'Quicksand', sans-serif;
+	box-sizing: border-box;
+	background-color:transparent;
+	box-shadow: rgba(0, 0, 0, .4) 0px 4px 12px 0px;
+	padding-top: 10px;
+	padding-bottom: 12px;
 }
+.logo{
+	color: #666;
+	padding-left: 100px;
+}
+.navbar-toggler-icon{
+	background:rgb(2, 179, 228);
+	color:rgb(36, 41, 45);
+}
+.navbar-nav{
+	margin-right: 150px;
+}
+.navbar-nav .nav-item{
+	margin: 0 20px;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #ccc;
+}
+.navbar .nav-link{
+     padding-left: 10px;
+    font-size: 14px;
+	color: #666;
+}
+.nav-item .active{
+	font-size: 14px;
+	color: #666;
+
+}
+.nav-item  .log{
+	font-size: 14px;
+	border: 1px solid rgb(210, 52, 50);
+	color: rgb(210, 52, 50);
+	border-radius: 10px 10px;
+	padding: 7px;
+	padding-left:20px !important;
+	padding-right: 20px !important;
+}
+.nav-item .sign{
+	font-size: 14px;
+	color: #fff;
+	background-color: rgb(210,52,50);
+	border-radius: 10px 10px;
+	padding: 7px;
+	padding-left:20px !important;
+	padding-right: 20px !important;
+}
+i{
+	color: red;
+	font-size: 14px;
+}
+
+/*-==============================
+		Subheader styling
+=================================*/
+.sub-header{
+	box-sizing: border-box;
+	height: 400px;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	background-color: rgba(210,52,50,.45);
+}
+.sub-header h2{
+	color: #666;
+	font-size: 20px;
+	padding-top: 100px;
+	padding-bottom: 40px;
+}
+.sub-header input[type="search"]{
+	box-shadow: 1px 2px 12px rgba(0,0,0,.23);
+	width: 60%;
+	padding: 9px;
+	border: none;
+	border-radius: 10px 10px 10px 10px;
+}
+.main-body h2{
+	font-size: 24px;
+	padding: 40px;
+}
+
+/*----------------------
+	modal styling
+------------------------*/
+.modal .modal-body{
+	padding:0px 30px;
+	padding-bottom: 30px;
+}
+.modal-header .logo{
+	font-size: 24px;
+	text-align: center;
+	color: rgb(210,52,50);
+}
+.modal .req{
+	color: red;
+}
+
+/*===============================
+	Main body styling
+================================*/
+.main-body{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====================================
+	CREATE POST STYLE
+=======================================*/
+.main-header{
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px 0px;
+	padding: 20px;
+	padding-bottom: 50px;
+}
+.main-header input{
+	width: 400px;
+	margin-right: 30px;
+	border-radius: 10px;
+	border:1px solid rgba(0,0,0,.4);
+	padding: 7px;
+	box-shadow: rgba(0,0,0,0.05) 0px 3px 12px 0px, rgba(0,0,0,0.05)  0px -3px 12px 0px; 
+}
+.main-header-right{
+	float: right;
+	margin-right: 200px;
+}
+.member{
+	background-color: #d23432;
+	color: #fff;
+	border-radius: 50px;
+	padding:10px;
+}
+.mid-section{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background:#d23432; 
+	box-shadow: rgba(0,0,0,0.05) 0px 3px 2px 0px;
+	padding-bottom: 10px;
+}
+.mid-section h2{
+	padding-left: 100px;
+	color:#fff;
+	font-size: 44px;
+}
+.mid-section p{
+	padding-left: 100px;
+	color:#fff;
+	font-size: 20px;
+}
+.side-post{
+	border-right: 1px solid rgba(0,0,0,.4);
+	padding-left: 10px;
+}
+.side-post li{
+	list-style: none;
+	list-style-position: outside;
+	margin-bottom: 20px;
+}
+.side-post li a{
+	padding: 0px;
+	margin:0px;
+	color: #666;
+	font-size: 16px;
+}
+.side-post h2{
+	color: #666;
+	font-family: "PT Sans", sans-serif;
+}
+.create-post{
+	padding-top: 50px;
+}
+.create-post h2{
+	font-size: 20px;
+	font-weight: 600;
+	font-family: "QuickSand", sans-serif;
+}
+.post-div{
+	padding-left: 60px; 
+}
+.post-div label{
+	font-size: 18px;
+	color: #666;
+}
+.post-div textarea{
+		box-shadow: 0px 2px 17px rgba(0,0,0,.45);
+		border:none;
+}
+.post-div input[type="submit"]{
+	margin-top: 15px;
+	margin-left: 550px;
+}
+.category-tab li{
+	list-style: none;
+	text-decoration: none;
+	display: inline-block;
+}
+.category-tab li ul{
+	display: block;
+}
+
+
+
+
+
+/*=============================
+	Form sytling
+==============================*/
+.modal label{
+	font-size: 14px;
+	color:#666;
+	line-height: 1.2;
+}
+.modal-body button{
+	float: right;
+	color: rgb(210,52,50);
+	background-color: transparent;
+	border-radius: 10px 10px;
+	border:1px solid rgb(210,52,50); 
+	padding: 10px;
+	transition: all ease 1s; 
+}
+.modal-body button:hover{
+	border: 1px solid rgba(210,52,50,.8);
+	box-shadow: 0px 2px 12px rgba(0,0,0,.45);
+	transition: all ease 1s;
+}
+input[type="text"]{
+	margin: 0 auto;
+	border-radius: 10px;
+	padding:9px;
+	border:1px solid #ccc;
+	transition: all ease 1s;
+}
+input[type="password"]{
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 9px;
+	border:1px solid #ccc;
+	transition: all ease 1s;
+}
+input[type="email"]{
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 9px;
+	border:1px solid #ccc;
+	transition: all ease 1s;
+}
+
+input[type="text"]:focus{
+	transition: all ease 1s;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 12px rgba(0,0,0,.45);
+}
+input[type="email"]:focus{
+	transition: all ease 1s;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 12px rgba(0,0,0,.45);
+}
+input[type="password"]:focus{
+	transition: all ease 1s;
+	border: 1px solid #ccc;
+	box-shadow: 0px 2px 12px rgba(0,0,0,.45);
+}
+
+/*  Sign In Style*/
