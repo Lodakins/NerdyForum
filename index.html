@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"
 
 
 	<!-- js files goes here -->
@@ -27,31 +28,99 @@
 <body>
 
 	<header>
-			<div class="navbar navbar-expand-md">
-				<a href="index.html" class="navbar-brand"> <span class="logo"> Logo</span></a>
-				
-				<button type="button" class="navbar-toggler" data-target="#nav-menu" data-toggle="collapse">
-					<span class="navbar-toggle-icon"></span>
+			<nav class="navbar navbar-expand-md">
+				<a href="index.html" class="navbar-brand"> <span class="logo"> NerdyForum</span></a>
+			
+				<button type="button" class="navbar-toggler" data-target="#nav-menu" data-toggle="collapse" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
 				</button>
 
 				<div class="collapse navbar-collapse" id="nav-menu">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item">
-							<a href="#" class=" nav-link active"> Home </a>
+							<a href="index.html" class="nav-link active"> Home</a>
+						</li> 
+						<li class="nav-item">
+							<a href="#" class="nav-link" style=""> About Us</a>
 						</li>
 						<li class="nav-item">
-							<a href=# class=" nav-link"> Sign In </a>
+							<a href="#" class="nav-link log" style=""> Log In</a>
 						</li>
 						<li class="nav-item">
-							<a href=# class=" nav-link"> Log In </a>
+							<a href="#" class="nav-link sign" data-toggle="modal" data-target="#signupmodal" aria-hidden="true"> Sign Up</a>
 						</li>
-						</ul>
 					</ul>
+				</div>
+			</nav>
+
+			<!-- Sign Up modal -->
+			<div class="modal fade signupmodal-lg" id="signupmodal" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-dialog-center" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<span class="logo"> NerdyForum</span>
+							<button type="button" class="close" data-dismiss="modal" ><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="modal-body">
+							<form action="" method="post" class="form-group">
+								<p><label for="first-name"> First Name <span class="req"> *</span></label>
+									<br>
+								<input type="text" id="first-name" name="first-name" class="form-control" placeholder="Surname"></p>
+								<p>
+									<label for="last-name"> Last Name <span class="req"> *</span></label>
+									<br>
+									<input type="text" name="last-name" id="last-name" class="form-control" placeholder="ade">
+								</p>
+								<p>
+									<label for="password"> Password <span class="req"> *</span></label>
+									<br>
+									<input type="password" name="password" id="password" class="form-control">
+								</p>
+								<p>
+									<label for="email"> Email <span class="req"> *</span></label>
+									<input type="email" name="password" id="password" class="form-control" placeholder="alo@example.com">
+								</p>
+							</form>
+							<button type="button" class="btn"> Register</button>
+						</div>
+					</div>	
 				</div>
 			</div>
 
-		
+
+<!-- header jumbotron --->
+			<div class="sub-header">
+			<center>  <h2> ASK A QUESTION</h2></center>
+
+			<center> <input type="search" name="post"> <i class="fas fa-search"></i></center>
+				
+			</div>
 	</header>
+<!-- Main  -->
+<div class="main-body">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 col-md-4">
+				<h2> CATEGORIES</h2>
+				<ul>
+					<li><a href="#"> Programming</a></li>
+					<li><a href="#"> Artificial Intelligence</a></li>
+					<li><a href="#"> Deep Learning</a></li>
+					<li><a href="#"> Cloud Computing</a></li>
+					<li><a href="#"> UI / UX Design</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-8 col-md-8">
+				<h2> TOP READ POST</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
 
 
 
