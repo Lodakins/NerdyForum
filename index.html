@@ -12,7 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<!-- to be removed later -->
+	<link href="css/fontawesome-all.min.css" rel="stylesheet" />
+
+	<!-- font awesome css -->
+	<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
+
+
 
 
 	<!-- js files goes here -->
@@ -20,8 +27,15 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/user-script.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript">
 		new WOW().init();
+
+		  $( function() {
+   			 $( "#tabs" ).tabs();
+       	   } );
 	</script>
 
 </head>
@@ -44,11 +58,23 @@
 							<a href="#" class="nav-link" style=""> About Us</a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link log" style=""> Log In</a>
+							<a href="#" class="nav-link log" data-target="#loginmodal" data-toggle="modal" aria-hidden="true"> Log In</a>
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link sign" data-toggle="modal" data-target="#signupmodal" aria-hidden="true"> Sign Up</a>
 						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" style=""><i class="fas fa-user"></i>
+								<div class="user-option">
+									<ul>
+										<li><a href=""> Profile</a></li>
+										<li><a href=""> All post</a></li>
+										<li><a href="createpost.html"> Create Post</a></li>
+										<li><a href=""> Single Post Page</a></li>
+									</ul>
+									</div>
+
+							</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -88,20 +114,56 @@
 			</div>
 
 
+<!-- log in modal --> 
+			<div class="modal fade loginmodal-lg" id="loginmodal" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-dialog-center" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<span class="logo"> NerdyForum</span>
+							<button type="button" class="close" data-dismiss="modal" ><span aria-hidden="true">&times;</span></button>
+						</div>
+						<div class="modal-body">
+							<form action="" method="post" class="form-group">
+								<p>
+									<label for="email"> Email <span class="req"> *</span></label>
+									<input type="email" name="password" id="password" class="form-control" placeholder="alo@example.com">
+								</p>
+								<p>
+									<label for="password"> Password <span class="req"> *</span></label>
+									<br>
+									<input type="password" name="password" id="password" class="form-control">
+								</p>
+								
+							</form>
+							<button type="button" class="btn"> Log In</button>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+
 <!-- header jumbotron --->
 			<div class="sub-header">
 			<center>  <h2> ASK A QUESTION</h2></center>
-
-			<center> <input type="search" name="post"> <i class="fas fa-search"></i></center>
+			<center> <input type="search" name="post" placeholder="enter word here"><i class="fas fa-search"></i></center>
 				
 			</div>
 	</header>
+
+
+<!-- User option section-->
+
+
+
+
+
+
 <!-- Main  -->
 <div class="main-body">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-3 col-md-4">
-				<h2> CATEGORIES</h2>
+			<div class="col-sm-3 col-md-4 category">
+				<h2 class="ml-2"> CATEGORIES</h2>
 				<ul>
 					<li><a href="#"> Programming</a></li>
 					<li><a href="#"> Artificial Intelligence</a></li>
@@ -110,8 +172,24 @@
 					<li><a href="#"> UI / UX Design</a></li>
 				</ul>
 			</div>
-			<div class="col-sm-8 col-md-8">
-				<h2> TOP READ POST</h2>
+			<div class="col-sm-8 col-md-8 top-post">
+				<div id="tabs">
+					<ul>
+						<li><a href="#read-tab"> Most Read</a> </li>
+						<li><a href="#comment-tab"> Most Commented </a></li>
+						<li><a href="#like-tab">  Most Likes </a></li>
+					</ul>
+						<div id="read-tab">
+							<p> Helloo aljdljdlaldjldklfndfakndklflkdjakl</p>
+						</div>
+						<div id="comment-tab">
+							ghujbkgklglggjkgkgjkkjkjgkjgkjggkjkjkjgjkkgjkj
+						</div>
+						<div id="like-tab">
+							hgvkjkjbjbkkjbjkbjkkbjkjkbjbkjbjkjbkbkjbkjbkjlbkj
+						</div>
+					
+				</div>
 			</div>
 		</div>
 	</div>
