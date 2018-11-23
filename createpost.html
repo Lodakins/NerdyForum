@@ -12,13 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
-
+		<link href="css/fontawesome-all.min.css" rel="stylesheet" />
 
 	<!-- js files goes here -->
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript" src="js/user-script.js"></script>
 	<script type="text/javascript">
 		new WOW().init();
 	</script>
@@ -26,18 +27,40 @@
 </head>
 <body>
 <header>
-	<div class="main-header">
-		<a href="index.html"> <span class="logo"> NerdyForum </span></a>
+	<nav class="navbar navbar-expand-md">
+	<a href="index.html" class="navbar-brand"> <span class="logo"> NerdyForum</span></a>
+			
+				<button type="button" class="navbar-toggler" data-target="#nav-menu" data-toggle="collapse" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-		<div class="main-header-right">
-				<input type="search" name="content-search">
-			 <span class="member"> AL</span>
-		</div>
-	</div>
+				<div class="collapse navbar-collapse" id="nav-menu">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link active"> Home</a>
+						</li> 
+						<li class="nav-item">
+							<a href="#" class="nav-link" style=""> About Us</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link" style=""><i class="fas fa-user"></i>
+								<div class="user-option">
+									<ul>
+										<li><a href=""> Profile</a></li>
+										<li><a href=""> All post</a></li>
+										<li><a href="createpost.html"> Create Post</a></li>
+										<li><a href=""> Single Post Page</a></li>
+									</ul>
+									</div>
+
+							</a></li>
+					</ul>
+				</div>
+	</nav>
 </header>
 
 <div class="mid-section">
-	<h2> Create your post</h2>
+	<h2> Tell your story</h2>
 	<p> Home ----> UI/UX</p>
 </div>
 
@@ -56,10 +79,7 @@
 				</aside>
 			</div>
 			<div class="col-md-8 post-div">
-				<ul class="category-tab">
-					<li> UI / UX
-						<ul>
-							<li>
+				<div class="category-tab">
 								<form>
 									<p>
 					  			    <label for="title"> Title </label>
@@ -70,19 +90,11 @@
 					  				 <label for="description"> Description</label>
 					  				</p>
 					  				 <p>
-					  				 <textarea placeholder="More details here" style="width: 700px; padding: 90px; border-radius: 10px;" >
+					  				 <textarea placeholder="More details here" style="width: 89%; padding: 10px; border-radius: 10px; height:400px;" >
 	  				 				 </textarea></p>
-	  				 				 <input type="submit" class="btn btn-outline-danger " name="submit">
-  								</form>
-  							</li>
-						</ul>
-					</li>
-					<li> Artificial Intelligence</li>
-					<li> Deep Learning</li>
-					<li> Full Stack Development</li>
-				</ul>
-				
-  				
+	  				 				 <input type="submit" class="btn btn-outline-danger" name="submit" value="submit">
+  				</form>
+  				</div>
 			</div>
 		</div>
 	
